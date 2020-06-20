@@ -32,6 +32,7 @@ void loop() {
   }
 }
 
+//method turns on 1 led after 4 sec. So after 20 seconds all the LEDs are on and the buzzer sounds
 void timer() {
   digitalWrite (7, HIGH);
   delay(4000);
@@ -40,6 +41,7 @@ void timer() {
     if (i == 2) {
       digitalWrite (7, LOW);
       for (int i = 0; i <= 2; i++ ){
+        //code to make a musical tone
             digitalWrite(buzzer, HIGH);
             delay(100);
             digitalWrite(buzzer, LOW);
